@@ -16,3 +16,38 @@ img {
   display: block;
   max-width: 100%;
 }
+
+[data-start] {
+  background-color: #83caa2;
+}
+
+#datetime-picker {
+  background-color: rgb(216, 225, 91);
+}
+
+.timer {
+  display: flex;
+  gap: 15px;
+  text-align: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.value {
+  height: 50px;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  color: rgb(89, 89, 243);
+}
+
+.label {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(17, 17, 127);
+  text-transform: uppercase;
+}
