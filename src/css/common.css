@@ -21,6 +21,10 @@ img {
   background-color: #83caa2;
 }
 
+[data-start]:hover {
+  background-color: #2bb265;
+}
+
 #datetime-picker {
   background-color: rgb(216, 225, 91);
 }

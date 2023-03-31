@@ -19,6 +19,8 @@ const dataHours = document.querySelector('span[data-hours]');
 const dataMinutes = document.querySelector('span[data-minutes]');
 const dataSeconds = document.querySelector('span[data-seconds]');
 
+Notify.info('My friend! Please, choose a date and click on start');
+
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -26,9 +28,10 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     if (selectedDates[0] < new Date()) {
-      Notify.failure('My friend! Please choose a date in the future');
+      Notify.failure('Sorry... My friend! Please choose a date in the future');
     } else {
       startBt.disabled = false;
+      Notify.success('Yes! Click on start!');
       const timer = {
         intervalId: null,
         start() {
