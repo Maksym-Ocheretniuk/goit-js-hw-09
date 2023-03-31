@@ -17,11 +17,11 @@ img {
   max-width: 100%;
 }
 
-[data-start] {
+.start-btn {
   background-color: #83caa2;
 }
 
-[data-start]:hover {
+.start-btn:hover {
   background-color: #2bb265;
 }
 
